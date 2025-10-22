@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== [SEO BASICS] ================================================== -->
+    <title>verlangid - Links</title>
+    <meta name="description" content="verlangid — Digital creator & content maker. Temukan semua tautan resmi: YouTube, Instagram, TikTok, Telegram, WhatsApp, dan VCLOUDX Hosting.">
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+    <link rel="canonical" href="https://verlang.id/">
+
+    <!-- ==== [ICONS / PWA] ================================================= -->
+    <!-- Letakkan file2 icon ini di folder /image/icons sesuai ukuran -->
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/image/profile.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="/image/profile.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image//profile.jpg">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+
+    <!-- ==== [OPEN GRAPH / FACEBOOK / WHATSAPP] ============================ -->
+    <!-- Gambar OG disarankan 1200x630 atau 1200x628 -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="verlangid">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:title" content="verlangid — All Links">
+    <meta property="og:description" content="Semua tautan resmi verlangid: social media & VCLOUDX Hosting.">
+    <meta property="og:url" content="https://verlang.id/">
+    <meta property="og:image" content="/image/og-image.jpg">
+    <meta property="og:image:alt" content="verlangid — preview banner">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- ==== [TWITTER CARD] ================================================ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="verlangid — All Links">
+    <meta name="twitter:description" content="Semua tautan resmi verlangid: social media & VCLOUDX Hosting.">
+    <meta name="twitter:image" content="/image/og-image.jpg">
+
+    <!-- ==== [STRUCTURED DATA / JSON-LD] =================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "verlangid",
+          "url": "https://verlang.id/",
+          "logo": "/image/og-image.jpg",
+          "sameAs": [
+            "https://youtube.com/@verlangid",
+            "https://instagram.com/verlang11",
+            "https://tiktok.com/@verlangid",
+            "https://t.me/verlangid11",
+            "https://wa.me/6287821239407",
+            "https://whatsapp.com/channel/0029VaaUyk1KWEKkBUbfen3V",
+            "https://whatsapp.com/channel/0029Vb5vjppCsU9Pmo3UUC2H"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "verlangid",
+          "url": "https://verlang.id/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://verlang.id/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ==== [EXISTING STYLES — TIDAK DIUBAH] ============================== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #000000;
+            --secondary: #ffffff;
+            --accent: #0066ff;
+            --text-primary: #000000;
+            --text-secondary: #666666;
+            --border: #e5e5e5;
+            --hover: #f5f5f5;
+            --shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
+            min-height: 100vh;
+            padding: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .profile-image-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 24px;
+        }
+
+        .profile-image {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            border-color: var(--text-secondary);
+        }
+
+        .online-indicator {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            width: 20px;
+            height: 20px;
+            background: #10b981;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+        }
+
+        .profile-name {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .profile-bio {
+            font-size: 16px;
+            color: var(--text-secondary);
+            max-width: 420px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* Social Links */
+        .links-container {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+
+        .social-link {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: var(--secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .social-link:hover {
+            border-color: var(--text-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px var(--shadow);
+        }
+
+        .social-link:active {
+            transform: translateY(0);
+        }
+
+        .icon-wrapper {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: white;
+            transition: transform 0.2s ease;
+        }
+
+        .social-link:hover .icon-wrapper {
+            transform: scale(1.05);
+        }
+
+        .youtube { background: #ff0000; }
+        .instagram { 
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .tiktok { background: #000000; }
+        .telegram { background: #0088cc; }
+        .whatsapp { background: #25d366; }
+        .whatsapp-channel { background: #128c7e; }
+        .vcloudx { background: #667eea; }
+
+        .link-content {
+            min-width: 0;
+        }
+
+        .link-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+            letter-spacing: -0.01em;
+        }
+
+        .link-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-weight: 400;
+        }
+
+        .arrow-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .social-link:hover .arrow-icon {
+            transform: translateX(4px);
+            color: var(--text-primary);
+        }
+
+        /* Stats Section */
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin-bottom: 48px;
+            padding: 0 4px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 20px 16px;
+            background: var(--hover);
+            border-radius: 12px;
+            transition: transform 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            letter-spacing: -0.02em;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-text {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+            font-weight: 500;
+        }
+
+        .footer-link:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .footer-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--hover);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        .footer-icon:hover {
+            background: var(--text-primary);
+            color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 640px) {
+            .container {
+                padding: 40px 20px 60px;
+            }
+
+            .profile-image {
+                width: 80px;
+                height: 80px;
+            }
+
+            .profile-name {
+                font-size: 24px;
+            }
+
+            .profile-bio {
+                font-size: 15px;
+            }
+
+            .social-link {
+                padding: 14px 18px;
+                gap: 14px;
+            }
+
+            .icon-wrapper {
+                width: 44px;
+                height: 44px;
+            }
+
+            .link-name {
+                font-size: 15px;
+            }
+
+            .link-description {
+                font-size: 13px;
+            }
+
+            .stats-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .social-link {
+                grid-template-columns: auto 1fr;
+                gap: 12px;
+            }
+
+            .arrow-icon {
+                display: none;
+            }
+        }
+
+        /* Tablet & Desktop */
+        @media (min-width: 768px) {
+            .container {
+                padding: 80px 32px 100px;
+            }
+
+            .profile-section {
+                margin-bottom: 56px;
+            }
+
+            .links-container {
+                gap: 14px;
+            }
+
+            .social-link {
+                padding: 18px 24px;
+            }
+
+            .stats-section {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #ffffff;
+                --secondary: #000000;
+                --text-primary: #ffffff;
+                --text-secondary: #a0a0a0;
+                --border: #2a2a2a;
+                --hover: #1a1a1a;
+                --shadow: rgba(255, 255, 255, 0.05);
+            }
+
+            body {
+                background: #000000;
+            }
+
+            .profile-image {
+                border-color: var(--border);
+            }
+
+            .social-link {
+                background: var(--hover);
+            }
+
+            .online-indicator {
+                border-color: #000000;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection color */
+        ::selection {
+            background: var(--accent);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-image-wrapper">
+                <img src="/image/profile.jpg" alt="verlangid" id="profileImage" class="profile-image">
+                <div class="online-indicator"></div>
+            </div>
+            <h1 class="profile-name" id="profileName">verlangid</h1>
+            <p class="profile-bio" id="profileBio">
+                Digital creator & content maker. Let's connect and collaborate on exciting projects.
+            </p>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Followers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Collaborations</div>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="links-container" id="linksContainer"></div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-text">
+                © 2022 - 2025 <span id="footerName">verlangid</span>. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">About</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Social media links data
+        const socialLinks = [
+            {
+                name: 'YouTube',
+                description: 'Subscribe for tutorials and creative content',
+                icon: `<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>`,
+                url: 'https://youtube.com/@verlangid',
+                className: 'youtube'
+            },
+            {
+                name: 'Instagram',
+                description: 'Daily updates and behind the scenes',
+                icon: `<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>`,
+                url: 'https://instagram.com/verlang11',
+                className: 'instagram'
+            },
+            {
+                name: 'TikTok',
+                description: 'Creative videos and entertainment',
+                icon: `<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>`,
+                url: 'https://tiktok.com/@verlangid',
+                className: 'tiktok'
+            },
+            {
+                name: 'Telegram',
+                description: 'Join the community for discussions',
+                icon: `<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                </svg>`,
+                url: 'https://t.me/verlangid11',
+                className: 'telegram'
+            },
+            {
+                name: 'WhatsApp',
+                description: 'Direct messaging for collaborations',
+                icon: `<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>`,
+                url: 'https://wa.me/6287821239407',
+                className: 'whatsapp'
+            },
+            {
+                name: 'WhatsApp Channel',
+                description: 'Get exclusive updates and announcements',
+                icon: `<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>`,
+                url: 'https://whatsapp.com/channel/0029VaaUyk1KWEKkBUbfen3V',
+                className: 'whatsapp-channel'
+            },
+            {
+                name: 'VCLOUDX HOSTING',
+                description: 'Premium hosting solutions and services',
+                icon: `<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M20.8 16.4c-.3.2-.6.4-.9.5-.8.3-1.5.5-2.3.5-1.1 0-2-.3-2.9-.8-.8-.5-1.5-1.2-2-2-.5-.9-.8-1.8-.8-2.9s.3-2 .8-2.9c.5-.9 1.2-1.5 2-2 .9-.5 1.8-.8 2.9-.8.8 0 1.5.2 2.3.5.3.1.6.3.9.5l-1.5 2c-.2-.1-.4-.2-.6-.3-.4-.1-.8-.2-1.2-.2-.6 0-1.1.1-1.5.4-.5.3-.8.6-1.1 1.1-.3.5-.4.9-.4 1.5s.1 1 .4 1.5c.3.5.6.8 1.1 1.1.5.3 1 .4 1.5.4.4 0 .8-.1 1.2-.2.2-.1.4-.2.6-.3l1.5 2zM3.6 9c.5-.9 1.2-1.5 2-2 .9-.5 1.8-.8 2.9-.8s2 .3 2.9.8c.9.5 1.5 1.2 2 2 .5.9.8 1.8.8 2.9s-.3 2-.8 2.9c-.5.9-1.2 1.5-2 2-.9.5-1.8.8-2.9.8s-2-.3-2.9-.8c-.9-.5-1.5-1.2-2-2-.5-.9-.8-1.8-.8-2.9s.3-2 .8-2.9zm3 5c.5.3 1 .4 1.5.4s1-.1 1.5-.4c.5-.3.8-.6 1.1-1.1.3-.5.4-.9.4-1.5s-.1-1-.4-1.5c-.3-.5-.6-.8-1.1-1.1-.5-.3-.9-.4-1.5-.4s-1 .1-1.5.4c-.5.3-.8.6-1.1 1.1z"/>
+                </svg>`,
+                url: 'https://whatsapp.com/channel/0029Vb5vjppCsU9Pmo3UUC2H',
+                className: 'vcloudx'
+            }
+        ];
+
+        // Render links function
+        function renderLinks() {
+            const container = document.getElementById('linksContainer');
+            
+            socialLinks.forEach((link, index) => {
+                const linkElement = document.createElement('a');
+                linkElement.href = link.url;
+                linkElement.className = 'social-link';
+                linkElement.target = '_blank';
+                linkElement.rel = 'noopener noreferrer';
+                linkElement.style.animationDelay = `${index * 0.05}s`;
+                
+                linkElement.innerHTML = `
+                    <div class="icon-wrapper ${link.className}">
+                        ${link.icon}
+                    </div>
+                    <div class="link-content">
+                        <div class="link-name">${link.name}</div>
+                        <div class="link-description">${link.description}</div>
+                    </div>
+                    <svg class="arrow-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                `;
+                
+                container.appendChild(linkElement);
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderLinks();
+            
+            // Click tracking
+            document.querySelectorAll('.social-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const linkName = this.querySelector('.link-name').textContent;
+                    console.log('Link clicked:', linkName);
+                    
+                    // Optional: Add analytics tracking here
+                    // gtag('event', 'click', { link_name: linkName });
+                });
+            });
+        });
+
+        // Update profile function
+        function updateProfile(name, bio, imageSrc) {
+            if (name) document.getElementById('profileName').textContent = name;
+            if (bio) document.getElementById('profileBio').textContent = bio;
+            if (imageSrc) document.getElementById('profileImage').src = imageSrc;
+            if (name) document.getElementById('footerName').textContent = name;
+        }
+
+        // Example usage:
+        // updateProfile('John Doe', 'Digital Creator & Content Maker', '/image/profile.jpg');
+    </script>
+</body>
+</html>
